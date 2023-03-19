@@ -2,7 +2,7 @@ import crypto from 'crypto';
 import jsonwebtoken from 'jsonwebtoken';
 import pbkdf2 from 'pbkdf2';
 
-import { NewUser, User } from '../../shared/types';
+import { NewUser, User } from './sharedx/types';
 
 export interface PasswordHash {
   salt: string;

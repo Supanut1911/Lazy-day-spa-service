@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 
-import { Appointment } from '../../../shared/types';
 import db from '../db-func';
+import { Appointment } from '../sharedx/types';
 
 // month and year are required arguments
 export async function get(req: Request, res: Response): Promise<Response> {

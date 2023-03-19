@@ -1,9 +1,9 @@
 import { Request, Response } from 'express';
 
-import { User } from '../../../shared/types';
 import { AuthUser, createJWT, hashPassword, passwordIsValid } from '../auth';
 import db from '../db-func';
 import { AuthRequest } from '../middlewares';
+import { User } from '../sharedx/types';
 
 function removePasswordandAddToken(user: AuthUser): User {
   // use "object rest operator" to remove properties in a typescript-friendly way

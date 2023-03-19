@@ -2,7 +2,7 @@
 /* eslint-disable max-lines-per-function */
 import dayjs from 'dayjs';
 
-import { Appointment } from '../../../shared/types';
+import { Appointment } from '../sharedx/types';
 import db from '.';
 
 // utility function to make unpadded month/date numbers into padded

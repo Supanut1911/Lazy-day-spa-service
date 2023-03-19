@@ -9,13 +9,13 @@ import jsonPatch, { Operation } from 'fast-json-patch';
 import { promises as fs } from 'fs';
 import path from 'path';
 
+import { AuthUser, NewAuthUser } from '../auth';
 import {
   Appointment,
   AppointmentDateMap,
   Staff,
   Treatment,
-} from '../../../shared/types';
-import { AuthUser, NewAuthUser } from '../auth';
+} from '../sharedx/types';
 
 type JsonDataType = AuthUser | Appointment | Treatment | Staff;
 

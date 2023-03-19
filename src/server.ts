@@ -3,13 +3,13 @@ import dotenv from 'dotenv';
 import express, { json } from 'express';
 import jwt from 'express-jwt';
 
-import { User as UserType } from '../../shared/types';
 import { createAppointments } from './db-func/appointmentUtils';
 import { validateUser } from './middlewares/index';
 import appointmentRoutes from './route-methods/appointment';
 import staffRoutes from './route-methods/staff';
 import treatmentRoutes from './route-methods/treatment';
 import userRoutes from './route-methods/user';
+import { User as UserType } from './sharedx/types';
 
 dotenv.config();
 if (!process.env.EXPRESS_SECRET) {
